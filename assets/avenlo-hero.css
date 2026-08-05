@@ -1,0 +1,36 @@
+.avenlo-hero {
+  padding: 80px 0;
+}
+
+.avenlo-hero .page-width {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.avenlo-hero__badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #e9e2d8;
+  font-size: 0.875rem;
+}
+
+.avenlo-hero__heading {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.avenlo-hero__text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.avenlo-hero__image img {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+}
