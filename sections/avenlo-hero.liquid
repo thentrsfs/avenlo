@@ -1,0 +1,93 @@
+<section class="avenlo-hero">
+
+  <div class="page-width">
+
+    <div class="avenlo-hero__content">
+
+      <p class="avenlo-hero__badge">
+        {{ section.settings.badge }}
+      </p>
+
+      <h1 class="avenlo-hero__heading">
+        {{ section.settings.heading }}
+      </h1>
+
+      <p class="avenlo-hero__text">
+        {{ section.settings.text }}
+      </p>
+
+      <a
+        href="{{ section.settings.button_link }}"
+        class="button"
+      >
+        {{ section.settings.button_label }}
+      </a>
+
+    </div>
+
+    <div class="avenlo-hero__image">
+
+      {% if section.settings.image != blank %}
+
+        {{
+          section.settings.image
+          | image_url: width: 900
+          | image_tag
+        }}
+
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Avenlo Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge",
+      "label": "Badge",
+      "default": "NEW COLLECTION"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Designed for Calm Living"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Timeless furniture and home decor inspired by Japandi simplicity."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Shop Collection"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avenlo Hero"
+    }
+  ]
+}
+{% endschema %}
