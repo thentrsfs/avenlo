@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.description",
           "settings": {
-            "text": "{{ closest.collection.description }}",
+            "text": "<p>{{ closest.collection.description }}</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
