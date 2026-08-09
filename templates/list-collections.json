@@ -107,7 +107,7 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "rte",
+                "type_preset": "h4",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -119,7 +119,7 @@
                 "text_color": "{{ settings.color_palette.foreground }}",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 5,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
