@@ -77,7 +77,7 @@
         "actions_font": "body",
         "actions_text_case": "none",
         "background_color_top": "{{ settings.color_palette.background }}",
-        "text_color_top": "",
+        "text_color_top": "{{ settings.color_palette.foreground }}",
         "background_color_bottom": "",
         "text_color_bottom": "",
         "bubble_style": "default",

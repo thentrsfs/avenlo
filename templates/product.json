@@ -251,7 +251,7 @@
               "type": "_divider",
               "name": "t:names.divider",
               "settings": {
-                "thickness": 1,
+                "thickness": 0.5,
                 "corner_radius": "square",
                 "divider_color": "{{ settings.color_palette.color2 }}",
                 "width_percent": 100,
@@ -294,9 +294,9 @@
                     "input_style": "custom",
                     "input_background_color": "{{ settings.color_palette.background }}",
                     "input_text_color": "{{ settings.color_palette.foreground }}",
-                    "input_border_color": "{{ settings.color_palette.foreground }}",
+                    "input_border_color": "{{ settings.color_palette.color2 }}",
                     "border_width": 1,
-                    "border_radius": 0
+                    "border_radius": 4
                   },
                   "blocks": {}
                 },
